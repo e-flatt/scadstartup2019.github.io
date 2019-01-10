@@ -6,7 +6,7 @@ html{
     top: 3%;
     margin: auto;
     position: absolute;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     display: block;
     
@@ -24,7 +24,6 @@ html{
 .BG_FAQ{
     background-size: cover;
     height: 100%;
-    background-position: center;
     background-attachment: fixed;
 }
 
@@ -150,11 +149,54 @@ html{
     background-position: center;
 }
 
+.bottomLine{
+    border-bottom-style: solid;
+    border-spacing: 10px;
+}
+
 
 .newFAQ{
-    text-align: center;
+    text-align: left;
     color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+}
+
+
+
+
+.reserve{
+    margin: auto; 
+    display: block; 
+    background-color:rgba(255, 255, 255, 0.1); color: white; 
+    border-color: #ffffff; 
+    border-radius: 12px; 
+    width: 298px; 
+    height: 61px; 
+    font-size: 15px; 
+    text-align: center;
+}
+
+.reserve:hover{
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+}
+
+.anchors{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.anchors:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mentors{
+    padding-top: 60px;
 }
 
 .themeBG{

@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 0px;
   box-sizing: border-box; }
@@ -204,9 +204,12 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: black;
-  background-color: #ffffff;
-  border-color: none; }
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1); ;
+  border-color: #ffffff;
+    border-radius: 8px;
+
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -217,9 +220,13 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: black;
-  background-color: #ffffff;
-  border-color: #1EAEDB; }
+  color: white;
+  background-color:rgba(255, 255, 255, 0.1) ;
+  border-color: white;
+    transform: scale(1.1);
+    transition: .4s ease;
+
+}
 
 
 /* Forms
