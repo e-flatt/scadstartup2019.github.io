@@ -74,6 +74,12 @@ html{
     }
 }
 
+@media (max-width: 500px) {
+  .homePad {
+   padding-top: 100px;
+    }
+}
+
 @media (max-width: 1024px) {
   .header {
    visibility: hidden;
