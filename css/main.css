@@ -163,7 +163,10 @@ html{
 
 }
 
-
+.deliverables_BG{
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
 .reserve{
@@ -298,6 +301,14 @@ html{
             display: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+        .container{
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+}
+
 
 
 .popup {
