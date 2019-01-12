@@ -63,7 +63,7 @@
                         <li><a href="#team" id="anchor5">Team</a></li>
                         <li><a href="#mentors" id="anchor6">Mentors</a>
                         </li>
-                         <li><a href="#judges" id="anchor7">Judges</a>
+                         <li><a href="#judges" id="anchor7">Judges / Rules</a>
                         <br>
                         <br>
                         <li><a href="#signup" id="anchor6">Register</a></li>
@@ -76,15 +76,164 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="home" class="homeBG" style="background-image: url(images/Home_BG.png);">
-    <div class="container" style="height: 100vh; padding-top: 80px; padding-bottom: 60px; color: #ffffff;">
+    <div class="container" style="height: 100%; padding-top: 25px; padding-bottom: 300px; color: #ffffff;">
     <div class="twelve columns homePad" style="text-align: center;">
-        <img src="images/heroImage.png" style="width: 70%;">
-       <img src="images/countdown.png" style="width: 100%; padding-top: 30px;">
-        <img src="images/arrow.png" style="width: 7%;">
-        <h5>Scroll down to learn more</h5>
-        </div>
+        <img src="images/StartUp_Header.png" style="width: 80%;">
     </div>
+<div class="row">
+<div class="three columns countdown">
+        <p id="demo" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 9, 2019 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "<br>days " ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+            </div> 
+    <div class="three columns countdown">
+    <p id="hours" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 9, 2019 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("hours").innerHTML = hours + "<br>hours ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("hours").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     </div>
+<div class="three columns countdown">
+    <p id="minutes" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 9, 2019 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("minutes").innerHTML = 
+  minutes + "<br>minutes " ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("minutes").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>   
+<div class="three columns countdown">
+    <p id="seconds" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 9, 2019 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("seconds").innerHTML = 
+   seconds + "<br>seconds ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("seconds").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+    
+<div class="twelve columns" style="text-align: center;">
+    <h3><b>Join the design competition of the year!</b>
+    </h3>
+     <h5>February 9th - February 16th, 2019</h5>
+    </div>  
+    <div class="twelve columns" style="padding-top: 15px;">
+    <a href="#signup" style="text-decoration: none;"> <button class="reserve">RESERVE YOUR SPOT</button></a>
+    </div>
+    
+<div class="twelve columns" style="text-align: center; padding-top: 15px;">
+    <h5>Scroll down to learn more</h5>
+    <img src="images/new_arrow.png" style="width: 8%;">
+    </div>    
+    
+        </div>            
+    </div>
+    
+
     
 <div id="whatIs" class="BG_FAQ" style="background-image: url(images/WhatIsStartUp_BG.png); color: #ffffff;">
   <div class="container" style="height: 100%; padding-top: 75px; padding-bottom: 35px;">
@@ -100,9 +249,7 @@
             <br>
             Students are challenged to come up with a product or service concept based on a theme, and are given a toolkit of product design and service design sources to utilize. Each team’s final deliverables are presented in the form of a slide deck which they present to a panel of judges that serve as mock investors. Each investor is given 15 million “flux-bux” to contribute to their favorite project. The winner with the most funding wins this year’s StartUp competition!</p>
           <p class="bottomLine" style="opacity: .3;"></p>
-          <div class="twelve columns">
-    <img src="images/BannerIMG.png" style="width: 100%;">    
-        </div>
+          
           
 <div class="twelve columns mentors">
     <img src="images/5_judges_Img.png" style="width: 30%; float: left; padding-right: 30px;"> 
@@ -156,7 +303,7 @@
     <div class="row">
         <div class="twelve columns">
         <h2><b>Theme</b></h2>
-            <p>The theme will be released at the kickoff event so make sure you're there!</p>
+            <p>The theme will be announced soon. Check back later!</p>
                 </div>
             </div>
         </div>
@@ -240,13 +387,13 @@
       <div class="twelve columns newFAQ">
           
         <h1><b>Event Schedule</b></h1> 
-    <p>Throughout the week will be offering a variety of workshops to enhance student's skills and provide opportunities with industry professionals.</p>
-          <img src="images/kickoff_Event.png" style="width: 100%; padding-bottom: 10px;">
-          <img src="images/Session_Event.png" style="width: 100%; padding-bottom: 10px;">
-          <img src="images/Midpoint_Event.png" style="width: 100%; padding-bottom: 10px;">
-          <img src="images/Mentor_Event.png" style="width: 100%; padding-bottom: 10px;">
-          <img src="images/Pitch_Event.png" style="width: 100%; padding-bottom: 10px;">
-          <img src="images/Celebration_Event.png" style="width: 100%; padding-bottom: 10px;">
+    <p>Throughout the week, we'll be offering a variety of workshops to enhance student's skills and provide opportunities with industry professionals.</p>
+          <img src="images/kickoff_Event.png" style="width: 100%; padding-bottom: 15px;">
+          <img src="images/Session_Event.png" style="width: 100%; padding-bottom: 15px;">
+          <img src="images/Midpoint_Event.png" style="width: 100%; padding-bottom: 15px;">
+          <img src="images/Mentor_Event.png" style="width: 100%; padding-bottom: 15px;">
+          <img src="images/Pitch_Event.png" style="width: 100%; padding-bottom: 15px;">
+          <img src="images/Celebration_Event.png" style="width: 100%; padding-bottom: 15px;">
           
           
           
@@ -261,12 +408,12 @@
        <div class="row">
         <div class="twelve columns">
            <h2><b>Deliverables</b></h2>
-            <p>Throughout the week students will be working toward creating products and services based off their business idea. Below are the deliverables required for the final pitch presentations.</p>
+            <p>Throughout the week students, will be working toward creating products and services based off their business idea. Below are the deliverables required for the final pitch presentations.</p>
            </div>
            <div class="twelve columns mentors">
     <img src="images/whiteBox.png" style="width: 30%; float: left; padding-right: 30px;"> 
-    <h2><b>1.Digital Slideshow Presentation</b></h2>
-    <p>Students will "wow" the judges with a digital slideshow to explain their idea and area of impact that their new product will have.
+    <h2><b>Digital Slidedeck</b></h2>
+    <p>Students will create a slideshow presentation to explain their idea and are of impact that their new product will have. Make sure there's a clear problem and solution statement, as well as a completed business model canvas. 
     </p>
           
           
@@ -274,7 +421,7 @@
 <div class="twelve columns mentors">
     <img src="images/whiteBox.png" style="width: 30%; float: right; padding-left: 30px;"> 
     <h2 style="text-align: right;"><b>Business Model</b></h2>
-    <p style="text-align: right;">Through this exercise students will think through all the ways their new company will make an impact and generate revenue.
+    <p style="text-align: right;">Teams will create a business model to explain how their company will make an impact and generate revenue. We'll be uploading a business model template in the next week.
     </p>
           
           
@@ -290,24 +437,12 @@
            <div class="twelve columns mentors">
     <img src="images/whiteBox.png" style="width: 30%; float: right; padding-left: 30px;"> 
     <h2 style="text-align: right;"><b>Extras!</b></h2>
-    <p style="text-align: right;">Anything such as posters, vision video, clothing, etc in addition to the required above 3 deliverables are encouraged! Find what fits your passion and skills set to incorporate it into your teams final presentation.
+    <p style="text-align: right;">Anything such as posters, vision video, clothing, etc. in addition to the required above 3 deliverables are encouraged! Find what fits your passion and skills set to incorporate it into your teams final presentation. This is your chance to "wow" the judges, so give us what you've got.
     </p>
         </div>
 <div class="twelve columns">
            <p class="bottomLine" style="opacity: .3; padding-top: 45px;"></p>
            </div> 
-           
-<div class="twelve columns">
-           <h2><b>Judging Criteria</b></h2>
-    <h5>You'll have an oppurtunity to present your StartUp to 5 judges who each have access to 15 million "flux-bux". They can invest as much money as they'd like to the companies of their choice. Judges will be reviewing your projects based on the following criteria:</h5>
-    <ul style="list-style-type: disc;">
-  <li><b>Meet all deliverables</b> - Does your team have everything completed listed above?</li>
-  <li><b>Measurable Outcomes / Real World Impact</b> - How will your product influence humanity?</li>
-  <li><b>Visual Prototype</b> - Come with an example of your product to show off</li>
-  <li><b>"Wow" Factor</b> - Amaze the judges! Be unique and think outside the box!</li>
-        
-</ul>
-           </div>
            
         </div>
        </div>
@@ -450,7 +585,7 @@
         </div>
      <div class="four columns facesPadding">
         <img src="faces/mattie.png" style="width: 55px; height: 55px; float: left; padding-right: 10px;">
-        <p><b>Mattie Overmayer</b><br>
+        <p><b>Mattie Overmyer</b><br>
         Social Media
         </p>
         </div>
@@ -481,16 +616,32 @@
     </div>
     
 <div id="judges" class="partnersBG" style="background-image: url(images/judges_BG.png); background-attachment: fixed;">
-    <div class="container" style="height: 100vh; padding-top: 60px; color: #ffffff;">
+    <div class="container" style="height: 100%; padding-top: 60px; padding-bottom: 425px; color: #ffffff;">
     <div class="row">
     <div class="twelve columns">
-        <h1><b>Judges</b></h1>
+        <h1><b>Judges / Criteria</b></h1>
         <p>Judges will be coming from across the country to offer input and direction on student's final projects in the Final Pitch. Representatives from various industries will be represented at different points throughout the week.
         <br>
         <br>
-        Judges will be anmounced soon.
+        Judges will be announced soon.
         </p>
-                </div>        
+                </div> 
+        <div class="twelve columns">
+        <p class="bottomLine" style="opacity: .3;"></p>
+        </div>
+        <div class="twelve columns">
+    <p>You'll have an opportunity to present your StartUp to 5 judges who each have access to 15 million "flux-bux". They can invest as much money as they'd like to the companies of their choice. Judges will be reviewing your projects based on the following criteria:</p>
+    <ul style="list-style-type: disc;">
+  <li><b>Meet all deliverables</b> - Does your team have everything completed listed above?</li>
+  <li><b>Measurable Outcomes / Real World Impact</b> - How will your product influence humanity?</li>
+  <li><b>Visual Prototype</b> - Come with an example of your product to show off.</li>
+  <li><b>"Wow" Factor</b> - Amaze the judges! Be unique and think outside the box!</li>
+        
+</ul>
+            <div class="twelve columns" style="padding-top: 30px; font-size: 12px;">
+      <p>You must agree to the rules, regulations, and expectations of etiquette for StartUp 2019. You'll agree to allow the StartUp Team to thoroughly review your final deliverables and process work to ensure honesty, integrity, and the absence of Intellectual property violations. You admit that all work produced is completely, and solely the product of your team unless explicitly stated in a written agreement from the Startup Team. Cheating is not allowed in any way shape or form.</p>
+      </div>
+           </div>
             </div>
         </div>
     </div>
@@ -507,7 +658,7 @@
             <p>Sign up for this week long design contest for a chance to build your portfolio, work with real-world companies and investors, add to your poppin' resume and win up to $2000 in cash prizes.
                  <br>
                  <br>
-            Seats are limited so RSVP as soon as you can. If you're all set, you can register you and your team of up to four people below. No worries if you don't have a team yet, register solo and you can form your team at StartUp Sessions.
+            Seats are limited so RSVP as soon as you can. If you're all set, you can register you and your team of up to four people below.
                 
                  </p>
   <form class="myform" id="myform" action="https://docs.google.com/forms/d/e/1FAIpQLSchbYt_03KK9i9mpvnYld9zuRINdENDDobRpoZ41b8jdmW-Wg/formResponse" target="popup" method="post">
@@ -519,18 +670,23 @@
   </div>  
             <div class="row">
     <div class="six columns">
-      <label for="exampleEmailInput">Student ID Number*</label>
-      <input name="entry.507515964" class="u-full-width" type="text" placeholder="Add ID number here" id="exampleEmailInput">
+      <label for="exampleEmailInput">SCAD Email*</label>
+      <input name="entry.507515964" class="u-full-width" type="text" placeholder="Add email" id="exampleEmailInput">
     </div>
                 <div class="six columns">
-      <label for="exampleEmailInput">SCAD Email*</label>
-      <input name="entry.1815364841" class="u-full-width" type="text" placeholder="Type SCAD email" id="exampleEmailInput">
+      <label for="exampleEmailInput">Major*</label>
+      <input name="entry.1815364841" class="u-full-width" type="text" placeholder="Add major" id="exampleEmailInput">
     </div>
     
   </div>
            <div class="twelve columns" style="padding-top: 75px;">
+               
             <h4><b>Team Members</b></h4>
-               <p>Teams may consist of 2-5 people. If you don't have a team yet, no worries. You can just skip this part.</p>
+               <p>• Teams may consist of 2-5 people.
+                   <br>• Teams must represent at least two different majors.
+                   
+                   
+                   <br>• If you don't have a team yet, no worries. You can sign up solo and find your team during StartUp Sessions.</p>
             </div> 
                       <div class="row">
     <div class="six columns">
@@ -608,8 +764,7 @@
     <div class="container" style="color: #ffffff; padding-top: 60px;">
     <div class="row">
         <h2><b>Contact US</b></h2>
-        <h4><b>Have any extra questions?</b></h4>
-        <h5>We'll try to get back to you ASAP.</h5>
+        <h5>Have any questions? We'll get back to you ASAP. </h5>
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSdck2P04Sdx0DZdJWHfCBr8cWUFDjUZAagYlbLx7LSblXBTFQ/formResponse" target="_blank";>
   <div class="row">
       <div class="twelve columns">
@@ -632,7 +787,13 @@
  
   <input class="button-primary" type="submit" value="Send">
 </form>
+        
+        <div class="twelve columns" style="padding-top: 50px;">
+         <a href="#home" style="text-decoration: none;"> <button class="reserve">BACK TO TOP</button></a>
+          </div>
+        
         </div>
+    </div>
     </div>
     </div>
     

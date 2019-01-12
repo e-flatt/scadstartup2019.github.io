@@ -12,6 +12,10 @@ html{
     
 }
 
+.countdown{
+    font-size: 30px;
+}
+
 .test2{
     top: 22%;
     margin: auto;
