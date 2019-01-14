@@ -12,6 +12,17 @@ html{
     
 }
 
+.event{
+   border: solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  margin-bottom: 25px;
+    border-width: .5px
+    
+
+}
+
 .countdown{
     font-size: 30px;
 }
