@@ -248,7 +248,7 @@ html{
 .portfolio_nav{
     position: fixed;
     left: 3.2%;
-    top: 25%;
+    top: %;
     z-index: 1000;
     list-style-type: none;
     color: #ffffff;
@@ -282,12 +282,15 @@ html{
   } 
 }
 
+.rulesText{
+    font-size: 12px;
+}
 
 
 .header {
   overflow: hidden;
   background-color: transparent;
-  padding: 35px 30px;
+  padding: 65px 30px;
     position: fixed;
 }
 
@@ -304,6 +307,7 @@ html{
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  
 
 }
 
@@ -390,3 +394,15 @@ html{
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
+.judgesImg{
+    padding-right: 30px;
+    vertical-align: middle;
+}
+
+.judgesFaces{
+    padding-top: 50px;
+    vertical-align: middle;
+    
+}
+
