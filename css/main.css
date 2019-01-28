@@ -248,8 +248,8 @@ html{
 .portfolio_nav{
     position: fixed;
     left: 3.2%;
-    top: %;
-    z-index: 1000;
+    top: 3%;
+    z-index:;
     list-style-type: none;
     color: #ffffff;
 }
@@ -325,10 +325,7 @@ html{
   visibility: hidden;
   }
   
-  .header-right {
-    float: none;
-  }
-}
+  
 
 .fa:hover{
     transform: scale(1.2);
