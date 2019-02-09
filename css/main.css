@@ -178,6 +178,17 @@ html{
     height: 100%;
 }
 
+.mentorLinks{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.mentorLinks:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .FAQ_BG{
     background-size: cover;
     background-attachment: fixed;
