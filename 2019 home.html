@@ -104,33 +104,161 @@
     </header>    
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="home" class="homeBG" style="background-image: url(images/Home_BG.png); height: 100vh;">
-    <div class="container" style="height: 100vh; padding-top: 100px; padding-bottom: 300px; color: #ffffff;">
+<div id="home" class="homeBG" style="background-image: url(images/Home_BG.png);">
+    <div class="container" style="height: 100%; padding-top: 25px; padding-bottom: 300px; color: #ffffff;">
     <div class="twelve columns homePad" style="text-align: center;">
         <img src="images/StartUp_Header.png" style="width: 80%;">
     </div>
+<div class="row">
+<div class="three columns countdown">
+        <p id="demo" style="text-align: center;"></p>
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 16, 2019 13:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "<br>days " ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+            </div> 
+    <div class="three columns countdown">
+    <p id="hours" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 16, 2019 13:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("hours").innerHTML = hours + "<br>hours ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("hours").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+<div class="three columns countdown">
+    <p id="minutes" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 16, 2019 13:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("minutes").innerHTML = 
+  minutes + "<br>minutes " ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("minutes").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>   
+<div class="three columns countdown">
+    <p id="seconds" style="text-align: center;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 16, 2019 13:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("seconds").innerHTML = 
+   seconds + "<br>seconds ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("seconds").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
     
 <div class="twelve columns" style="text-align: center;">
-    <h3><b>Stay tuned for StartUp 2020!</b>
+    <h3><b>Until the StartUp Celebration!</b>
     </h3>
-     <h5></h5>
+     <h5>February 9th - February 16th, 2019</h5>
     </div>  
    
+<div class="twelve columns" style="text-align: center; padding-top: 15px;">
+    <h5>Scroll down to learn more</h5>
    
+    </div>    
     
     <img src="images/fbtheme.png" style="width: 100%; display: none;">
     
-   <div class="container" style="text-align: center;">
-        <div class="row">
-       <div class="twelve columns" style="margin-top: 30%;"> 
-           <h5>Scroll down to learn more</h5>
-            </div>
-       </div>
-        </div>
-        
-        </div>
-
+        </div>            
     </div>
     
 
